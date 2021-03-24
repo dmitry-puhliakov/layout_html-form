@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="" onsubmit="onSubmit()">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application)" onsubmit="onSubmit()">
       <fieldset class="fieldset-section">
         <legend>Personal information</legend>
 
         <label for="surname" class="form-field">
           Surname:
-
           <input
             type="text"
             name="surname"
@@ -25,7 +24,6 @@
 
         <label for="first-name" class="form-field">
           Name:
-
           <input
             type="text"
             name="first-name"
@@ -35,7 +33,6 @@
 
         <label for="age" class="form-field">
           How old are You?
-
           <input
             type="number"
             name="age"
@@ -48,7 +45,6 @@
 
         <label for="birth-date" class="form-field">
           Full date of birth:
-
           <input
             type="date"
             name="birth-date"
@@ -58,7 +54,6 @@
 
         <label for="terms" class="form-field">
           I accept the term of the agreement
-
           <input
             type="checkbox"
             name="terms"
@@ -72,7 +67,6 @@
 
         <label for="e-mail" class="form-field">
           E-mail:
-
           <input
             type="email"
             name="e-mail"
@@ -82,14 +76,13 @@
           >
         </label>
 
-        <label for="pass" class="form-field">
+        <label for="password" class="form-field">
           Password:
-
           <input
             type="password"
-            name="pass"
+            name="password"
             required
-            id="pass"
+            id="password"
           >
         </label>
       </fieldset>
@@ -99,25 +92,27 @@
 
         <div class="form-field">
           Do you love cats?
-
-          <input
+          <label for="love-cats-yes">
+            Yes
+            <input
             type="radio"
             name="love-cats"
             id="love-cats-yes"
-          >
-          <label for="love-cats-yes">Yes</label>
+            >
+          </label>
 
-          <input
+          <label for="love-cats-no">
+            No
+            <input
             type="radio"
             name="love-cats"
             id="love-cats-no"
-          >
-          <label for="love-cats-no">No</label>
+            >
+          </label>
         </div>
 
         <label for="love-color" class="form-field">
           What is your favorite color?
-
           <input
             type="color"
             name="love-color"
@@ -127,7 +122,6 @@
 
         <label for="time-to-bed" class="form-field">
           What time do you go to bed?
-
           <input
             type="time"
             name="time-to-bed"
@@ -137,7 +131,6 @@
 
         <label for="car-brand" class="form-field">
           What are your favorite brand of cars?
-
           <select
             name="car-brand"
             multiple
@@ -151,7 +144,6 @@
 
         <label for="rate-work" class="form-field">
           How do you rate our work?
-
           <input
             type="range"
             name="rate-work"
@@ -168,7 +160,6 @@
 
         <label for="comments" class="form-field">
           Comments:
-
           <textarea
             name="comments"
             rows="2"
@@ -178,7 +169,6 @@
 
         <label for="recommend-us" class="form-field">
           Would you recommend us?
-
           <select name="recommend-us" id="recommend-us">
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -187,6 +177,8 @@
       </fieldset>
 
       <button type="submit">Submit</button>
+      <!-- Without type="submit my code takes fail in the button test
+      http://prntscr.com/10u71a0-->
     </form>
 
     <script type="text/javascript" src="./main.js"></script>

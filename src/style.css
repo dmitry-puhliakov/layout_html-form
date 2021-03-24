@@ -1,7 +1,7 @@
 .form-field {
   display: block;
   padding-bottom: 10px;
-  width: fit-content;
+  width: fit-content; /*I need to use width, because I like it!*/
 }
 
 .fieldset-section {
